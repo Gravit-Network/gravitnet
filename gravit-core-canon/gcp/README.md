@@ -1,41 +1,92 @@
 # Gravit Canon Proposals (GCP)
 
-This directory contains all **Gravit Canon Proposals** — the formal mechanism for evolving the Gravit Trust Protocol specification.
+The Gravit Canon Proposal (GCP) system is the formal mechanism for proposing, reviewing and adopting changes, extensions and research contributions to the Gravit Trust Protocol specification.
 
-GCPs are the **only** way to propose changes to the canonical documents in this repository.
+This process ensures transparent, evidence-based and historically traceable evolution of the protocol.
 
-## Process Overview
+Inspired by established frameworks: Bitcoin Improvement Proposals (BIP), Ethereum Improvement Proposals (EIP), IPFS Improvement Proposals (IPIP) and similar protocol governance models.
 
-Full process: [/governance/gcp-process.md](/governance/gcp-process.md)
+---
 
-Lifecycle: Draft → Review → Last Call (14 days) → Accepted → Final
+## Purpose
+
+GCPs guarantee that protocol development remains:
+
+- **Transparent** — all decisions are public and archived
+- **Rigorous** — backed by security analysis, simulations and threat modeling
+- **Traceable** — permanent historical record of ideas and rationale
+- **Open** — welcoming to engineers, researchers, philosophers and institutions worldwide
+
+GCPs form the official archive of design decisions, mathematical updates and conceptual advancements.
+
+---
 
 ## Proposal Types
 
-- **Standards Track** — changes to ontology, math-core, parameters, protocol rules
-- **Process** — changes to governance, review policies
-- **Informational** — research, simulations, philosophy, threat analysis
+- **Standards Track**
+  Changes to protocol behavior (ontology, math-core, parameters, propagation, quarantine logic, interfaces).
 
-## How to Participate
+- **Process**
+  Updates to governance, review policies, lifecycle rules or contributor workflows.
 
-1. Read the [template](/gcp/gcp-0000-template.md)
-2. Create a new file: `gcp-NNNN-short-title.md` (NNNN — sequential number assigned by editors)
-3. Submit as Pull Request
-4. Use issue templates to discuss or request early feedback
+- **Informational**
+  Research, analysis, simulations, philosophical reflections or epistemic frameworks (no normative changes).
 
-## Current Proposals
+---
 
-- **GCP-0000** — [Proposal Template](/gcp/gcp-0000-template.md) (Draft)
+## Lifecycle
 
-*(Список будет обновляться автоматически или вручную по мере принятия)*
+1. **Draft** — initial submission and early discussion
+2. **Review** — technical feedback, shepherding, revisions
+3. **Last Call** — 14-day final review window (default)
+4. **Accepted** — approved for canon inclusion (no unresolved substantive objections)
+5. **Final** — permanent canonical record (editorial fixes only)
+6. **Closed** — rejected, withdrawn, superseded or obsolete (reason documented)
 
-## Archived Proposals
+Full process: [/governance/gcp-process.md](/governance/gcp-process.md)
 
-All proposals (including Closed/Rejected) are permanently archived here for transparency.
+---
 
-## Editors
+## How to Submit
 
-- Initial Editor: Alex Konviser (@dr-alex-konviser)
-- (добавлять по мере появления)
+1. Copy [/gcp/gcp-0000-template.md](/gcp/gcp-0000-template.md)
+2. Rename to `gcp-NNNN-short-descriptive-title.md` (NNNN assigned by editors)
+3. Fill mandatory sections (especially Specification, Security Considerations, Threat Model Impact)
+4. Open a Pull Request
+5. (Optional) Start discussion via issue with "GCP Discussion" template
 
-Questions? Open an issue with template "GCP Discussion".
+Standards Track proposals **require**:
+- Security considerations
+- Backward compatibility impact
+- Threat model analysis
+- Simulation / analytical evidence (when affecting computation)
+
+---
+
+## Repository Layout
+
+- `/gcp/` — all proposals (`gcp-0001-...md`, etc.)
+- `/gcp/gcp-0000-template.md` — official template
+- `/governance/gcp-process.md` — detailed lifecycle and roles
+
+---
+
+## Governance & Editors
+
+- Initial Editor: Alex Konviser
+- Process governed by [/governance/gcp-process.md](/governance/gcp-process.md)
+- Editors assign numbers, verify format, manage transitions (no unilateral protocol changes)
+
+---
+
+## Philosophy
+
+Trust infrastructure demands structured, auditable decision-making — not opaque authority or informal consensus.
+The GCP system embodies this principle: open, rigorous, evidence-driven evolution open to the global community.
+
+---
+
+**Status**
+GCP System Version: v0.1 (Initial)
+Part of: Gravit Core Canon
+Evolving together with the protocol.

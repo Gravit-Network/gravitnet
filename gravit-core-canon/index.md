@@ -118,23 +118,23 @@ Defines the long-term scientific research agenda of the project.
 
 # Repository Structure
 /gcp
-gcp-0000-template.md
-gcp-0001-gravit-canon-architecture.md
-gcp-0002-gravit-trust-computation-model.md
-gcp-0003-gravit-threat-model.md
-gcp-0004-gravit-governance-model.md
-gcp-0005-gravit-ontology.md
-gcp-0006-gravit-epistemology.md
-gcp-0007-gravit-simulation-framework.md
-gcp-0008-gravit-reference-implementation.md
-gcp-0009-gravit-trust-network-protocol.md
-gcp-0010-gravit-cryptographic-trust-layer.md
-gcp-0011-gravit-trust-economics-model.md
-gcp-0012-gravit-trust-research-program.md
+	gcp-0000-template.md
+	gcp-0001-gravit-canon-architecture.md
+	gcp-0002-gravit-trust-computation-model.md
+	gcp-0003-gravit-threat-model.md
+	gcp-0004-gravit-governance-model.md
+	gcp-0005-gravit-ontology.md
+	gcp-0006-gravit-epistemology.md
+	gcp-0007-gravit-simulation-framework.md
+	gcp-0008-gravit-reference-implementation.md
+	gcp-0009-gravit-trust-network-protocol.md
+	gcp-0010-gravit-cryptographic-trust-layer.md
+	gcp-0011-gravit-trust-economics-model.md
+	gcp-0012-gravit-trust-research-program.md
 /governance
-gcp-process.md
+	gcp-process.md
 /math-core
-parameters.md
+	parameters.md
 
 # Design Principles
 

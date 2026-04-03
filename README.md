@@ -16,13 +16,20 @@ Gravit builds the Trust Continuum — the missing layer without which agentic in
 
 ## Repository Structure (Monorepo)
 
-This is a monorepo containing the three foundational layers of the Gravit protocol:
+This monorepo is organized into canonical standards, implementation layers, and supporting tooling:
 
-| Directory              | Project             | Triad Layer(s)         | Primary Purpose                                                                 | Status (March 2026)     |
-|------------------------|---------------------|------------------------|---------------------------------------------------------------------------------|--------------------------|
-| /gravit-core-canon   | Gravit Core Canon   | Quantum + Continuum    | Canonical trust logic protocol, verification rules, genesis proofs, provenance schema | Core protocol – active  |
-| /gravit-engine       | Gravit Engine       | Network + Continuum    | Runtime engine for distributed agent communication, semantic consensus, message routing | Execution layer – in dev |
-| /gravit-lab          | Gravit Lab          | Network + experiments  | Experimental sandbox: multi-agent simulations, History Keeper PoCs, catastrophe modeling, verification stress-tests | Research & prototypes   |
+| Directory  | Project Area       | Primary Purpose                                                                 | Status (March 2026)     |
+|------------|--------------------|---------------------------------------------------------------------------------|--------------------------|
+| /specs     | Canonical specs    | Source of truth for trust logic, verification rules, RFCs, and formal schemas  | Core protocol – active   |
+| /core      | Reference core     | Reference implementation of spec primitives and trust runtime components        | Foundation – in dev      |
+| /engine    | Runtime engine     | Distributed execution, communication, and semantic consensus runtime            | Execution layer – in dev |
+| /lab       | Research sandbox   | Simulations, stress tests, PoCs, and notebooks for protocol validation          | Research & prototypes    |
+| /sdk       | SDKs               | Developer-facing clients and integration libraries (Python first)               | Early scaffolding        |
+| /examples  | Example projects   | Ready-to-run usage examples and integration demos                               | Growing                  |
+| /docs      | General docs       | Architecture docs, ADRs, whitepaper, and implementation guides                  | Active                   |
+| /tools     | Utilities          | Verifier, CLI, and protocol support utilities                                   | In progress              |
+| /scripts   | Automation scripts | Build, spec verification, and release helpers                                   | In progress              |
+| /.github   | CI/CD and policy   | Workflows, templates, and repository governance configuration                    | Active                   |
 
 ## Philosophy & Differentiation
 
@@ -41,12 +48,14 @@ This is a monorepo containing the three foundational layers of the Gravit protoc
 git clone https://github.com/gravitnet/gravit.git
 cd gravit
 
-# Depending on which sub-project you want to work with:
-cd gravit-core-canon   # → see its README.md
+# Depending on which area you want to work with:
+cd specs    # canonical standards and RFCs
 # or
-cd gravit-engine       # → see its README.md
+cd core     # reference implementation
 # or
-cd gravit-lab          # → see its README.md
+cd engine   # runtime engine
+# or
+cd lab      # experiments and notebooks
 # Example: install dependencies (most sub-projects use one of these)
 # Option 1 – Node.js / TypeScript based
 pnpm install    # or npm / yarn / bun

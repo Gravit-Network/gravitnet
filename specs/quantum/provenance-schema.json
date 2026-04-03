@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProvenanceSchema",
+  "type": "object",
+  "description": "Canonical provenance envelope for Gravit trust artifacts.",
+  "properties": {},
+  "additionalProperties": true
+}

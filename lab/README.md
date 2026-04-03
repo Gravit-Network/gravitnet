@@ -105,4 +105,4 @@ It enables systematic exploration of trust as a computational phenomenon.
 ## Collaboration Invitation
 
 Researchers, PhD students, postdocs and institutions are invited to use Gravit Lab as a platform for trust network experiments.
-Submit proposals via GCP in gravit-core-canon or open issues here.
+Submit proposals via GCP in specs/RFC/gcp or open issues here.

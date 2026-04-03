@@ -220,7 +220,7 @@ The initial implementation may prioritize readability and experimentation.
 # Repository Structure
 
 The reference implementation repository may include:
-gravit-engine
+engine
 core/
 trust/
 network/

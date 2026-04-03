@@ -27,8 +27,8 @@ Every experiment is linked to specific GCPs and includes:
 
 ## How to Run Experiments
 
-1. Clone gravit-engine
-2. Run `python core/runtime.py`
+1. Use the engine package in this repository (engine/)
+2. Run `python core/src/runtime.py`
 3. Use notebooks in this folder for analysis
 4. Compare results against baseline
 

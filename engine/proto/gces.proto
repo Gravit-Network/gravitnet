@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message HypothesisEvent {
+  string id = 1;
+  bytes content = 2;
+}
+
+message ConflictEvent {
+  string id = 1;
+  repeated string hypothesis_ids = 2;
+}
+
+service SAIL {
+  rpc ComputeResilience(HypothesisEvent) returns (ConflictEvent);
+}

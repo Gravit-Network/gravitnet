@@ -1,0 +1,4 @@
+- no state deletion
+- no trace rewrite
+- all conflicts preserved
+- deterministic per generation cycle

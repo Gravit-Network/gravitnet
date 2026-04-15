@@ -1,31 +1,22 @@
-# CONTRIBUTING.md
 
-Gravit is a research and civilizational project — not a typical open-source product.
+# Contributing to Gravit
 
-### Contribution Principles
+## Principles
 
-1. **Preserve provenance** — always include sources, reasoning chain, and date
-2. **Include verification** — provide logic and evidence
-3. **Declare uncertainty** — explicitly state what is unknown or contested
-4. **Do not overwrite history** — only use supersede (new version references old)
-5. **Do not remove conflicts** — they are part of truth
+1. Specs are canonical truth
+2. Research explains reasoning, not implementation
+3. Engine implements, but does not redefine specs
+4. No duplication of Triad or GQRVP definitions
 
-### Prohibited
+## Workflow
 
-- Speculative claims without structure
-- Deletion or hiding of conflicts
-- Ignoring uncertainty
-- Modifying already fixed records (GHR)
+- Update specs first if system behavior changes
+- Then align core
+- Then engine
+- Always update INDEX.md
 
-### Contribution Process
+## Pull Requests
 
-1. Fork the repository
-2. Create branch: `feature/[name-or-record-number]`
-3. Commit message format:
-   `Add [what] with provenance [brief source/description]`
-4. Pull Request must contain:
-   - provenance chain
-   - verification (why it is true)
-   - uncertainty (what remains open)
-
-Thank you for contributing to civilizational memory infrastructure.
+Must specify:
+- affected layer
+- dependency chain impact

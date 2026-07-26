@@ -1,4 +1,4 @@
-# Gravit Network
+# Gravit Open Network
 
 ## Epistemic Execution System (EES)
 
